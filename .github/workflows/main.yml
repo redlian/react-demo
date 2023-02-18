@@ -28,6 +28,6 @@ jobs:
         run: |
           echo "Deploy ghpages"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <redlianEvanKao@users.noreply.github.com>"
+          npm run deploy -- -u "github-actions-bot <24538915redlian@users.noreply.github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_PAGES }}
