@@ -20,6 +20,9 @@ jobs:
           
       - name: install 
         run: npm install
+      
+      - name: build
+        run: npm run build
         
       - name: Deploy with gh-pages
         run: |
