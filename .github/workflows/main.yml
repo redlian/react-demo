@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          
+      - name: install gh-pages
+        run: npm install gp-pages
+        
       - name: Deploy with gh-pages
         run: |
           echo "Deploy ghpages"
