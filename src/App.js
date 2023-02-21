@@ -1,11 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Menu from './pages/Menu.js'
+import Portal from './context/portal.jsx';
+import Menu from './pages/Menu.jsx'
 
 function App() {
   return (
     <>
-      <Menu />
+      <div className='portal'>
+        <Portal>
+          <Menu />
+        </Portal>
+      </div>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
